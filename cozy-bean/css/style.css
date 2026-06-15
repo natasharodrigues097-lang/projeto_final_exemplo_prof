@@ -1,15 +1,15 @@
 :root {
-    --caramel: #C67A42;
-    --dark: #2D1A12;
-    --cream: #FDF9F4;
-    --beige: #F2E3D5;
-    --footer: #180D08;
+    --color-primary-caramel: #C67A42;
+    --color-texto-dark: #2d1a12;
+    --color-bg-cream: #FDF9F4;
+    --color-bg-beige: #F2E3D5;
+    --color-bg-dark-footer: #180D08;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background: var(--cream);
-    color: var(--dark);
+    font-family: 'Montserrat Light';
+    background: var(--color-bg-cream);
+    color: var(--color-texto-dark);
 }
 
 .section-padding {
@@ -21,13 +21,13 @@ body {
 }
 
 .custom-navbar {
-    background: rgba(24, 13, 8, .85);
+    background: url('../img/navbar.png');
     backdrop-filter: blur(10px);
 }
 
 .hero-section {
     height: 100vh;
-    background: url('../img/hero.jpg') center center/cover;
+    background: url('../img/hero.png') center center/cover;
     position: relative;
     display: flex;
     align-items: center;
@@ -45,9 +45,9 @@ body {
 }
 
 .hero-content h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Open Sans', serif;
     color: #fff;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .hero-content p {
@@ -55,7 +55,7 @@ body {
 }
 
 .btn-caramel {
-    background: var(--caramel);
+    background: var(--color-primary-caramel:);
     color: #fff;
     border: none;
 }
@@ -71,7 +71,7 @@ body {
 }
 
 .counter {
-    color: var(--caramel);
+    color: var(--color-primary-caramel);
     font-size: 3rem;
 }
 
@@ -111,7 +111,7 @@ body {
 }
 
 .footer {
-    background: var(--footer);
+    background: var(--color-bg-dark-footer);
     color: #fff;
     padding: 80px 0;
 }
