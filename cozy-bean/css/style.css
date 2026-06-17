@@ -3,13 +3,17 @@
     --color-texto-dark: #2d1a12;
     --color-bg-cream: #FDF9F4;
     --color-bg-beige: #F2E3D5;
-    --color-bg-dark-footer: #180D08;
+    --color-bg-dark-footer: #53240e;
 }
 
 body {
     font-family: 'Montserrat Light';
     background: var(--color-bg-cream);
     color: var(--color-texto-dark);
+}
+.playfair-display{
+font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
 }
 
 .section-padding {
@@ -55,7 +59,7 @@ body {
 }
 
 .btn-caramel {
-    background: var(--color-primary-caramel:);
+    background: var(--color-primary-caramel);
     color: #fff;
     border: none;
 }
@@ -115,11 +119,39 @@ body {
     color: #fff;
     padding: 80px 0;
 }
+.footer .container .row>div{
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+.footer.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .container .row>:nth-child(2){
+    margin-right: 54px;
+}
 
+.footer-title{
+    font-family: playfair display;
+    color: #fcd200;
+
+}
+
+.social a {
+    color: #fff;
+}
 .social i {
     font-size: 1.5rem;
     margin-right: 10px;
     cursor: pointer;
+}
+
+#instagram{
+    color:#C13584
+}
+#facebook{
+    color:#1877F2;
 }
 
 .fade-in {
@@ -131,4 +163,29 @@ body {
 .fade-in.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/*midias*/
+@media (max-width: 767px){
+    .footer{
+        padding: 70px 0 30px;
+    }
+    .footer .row{
+        justify-content: center;
+        text-align: center;
+    }
+    .footer .row>div{
+        align-items: center;
+        margin-right: 24px;
+    }
+    .footer .row>div:nth-child(2){
+margin-right: 0;
+
+}
+    .footer-links{
+    padding: 0;
+}
+    .social{
+    justify-content: center;
+}
 }
