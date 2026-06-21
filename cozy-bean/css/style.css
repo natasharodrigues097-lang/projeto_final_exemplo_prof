@@ -29,6 +29,10 @@ font-optical-sizing: auto;
     backdrop-filter: blur(10px);
 }
 
+.nav-item a{
+    color: #42f5f5;
+
+}
 .hero-section {
     height: 100vh;
     background: url('../img/hero.png') center center/cover;
@@ -190,7 +194,7 @@ margin-right: 0;
 }
 }
 @media (min-width:768px){
-    .footer .row>div:nth-child(3)
+    .footer .row>div:nth-child(3),
     .footer .row>div:nth-child(4){
         flex:1 1 0;
     }
