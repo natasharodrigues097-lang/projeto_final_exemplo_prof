@@ -30,7 +30,7 @@ font-optical-sizing: auto;
 }
 
 .nav-item a{
-    color: #42f5f5;
+    color: #ffff;
 
 }
 .hero-section {
@@ -262,4 +262,94 @@ margin-right: 0;
         font-size: 0.9rem;
     }
 
+}
+
+/* Loja / Produtos */
+.product-grid .card-img-top{
+    height: 180px;
+    object-fit: cover;
+}
+
+.product-item .card{
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(45,26,18,0.06);
+}
+
+.product-item .card .card-body{
+    padding: 18px;
+}
+
+.price{
+    color: var(--color-primary-caramel);
+    font-weight: 700;
+}
+
+.filter-btn.active{
+    background: var(--color-primary-caramel);
+    color: #fff;
+    border-color: var(--color-primary-caramel);
+}
+
+/* Offcanvas/carrinho */
+.offcanvas .offcanvas-body{min-height:300px}
+
+/* Cores oficiais das redes sociais (rodapé) */
+#whatsapp{ color: #25D366; }
+#tiktok{ color: #69C9D0; }
+#x{ color: #1DA1F2; }
+
+@media (max-width: 767px){
+    .product-grid .card-img-top{ height: 140px; }
+    .hero-content h1{ font-size: 2rem; }
+}
+
+/* Estilos adicionais para página de produtos */
+.product-grid{ display:flex; flex-wrap:wrap; gap:1.25rem; }
+.product-item{ display:flex; }
+.product-item .card{ width:100%; }
+.card .card-title{ font-size:1.05rem; margin-bottom:4px; }
+.card .card-text.small{ margin-bottom:8px; }
+
+/* Offcanvas (carrinho) */
+.offcanvas .offcanvas-body{ display:flex; flex-direction:column; gap:12px; }
+#cart-items{ min-height:120px; }
+
+/* Ajustes para botões e responsividade */
+.btn-caramel{ box-shadow: 0 6px 20px rgba(198,122,66,0.18); }
+.btn-caramel:focus{ box-shadow: 0 6px 20px rgba(198,122,66,0.28); }
+
+/* Cores oficiais das redes sociais (rodapé) - reforçando IDs existentes */
+#instagram{ color: #C13584; }
+#facebook{ color: #1877F2; }
+#whatsapp{ color: #25D366; }
+#tiktok{ color: #69C9D0; }
+#x{ color: #1DA1F2; }
+
+/* Pequenos ajustes mobile */
+@media (max-width: 575px){
+    .hero-section{ height: 30vh; }
+    .hero-content h1{ font-size:1.6rem; }
+    .product-item{ padding: 0 8px; }
+}
+
+/* FAQ: pequenos ajustes */
+.faq-search { margin-bottom: 20px; }
+.accordion-button { background: rgba(255,255,255,0.02); }
+.accordion-item { border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
+.accordion-body { background: #fff; color: var(--color-texto-dark); }
+
+@media (max-width: 767px){
+    .accordion .accordion-button{ font-size: 0.95rem; }
+    aside.col-lg-4{ margin-top: 30px; }
+}
+
+/* Reservas */
+.reservation-card{ border-radius: 14px; overflow: hidden; }
+.reservation-form .form-label{ font-weight:600; }
+.reservation-form .form-control, .reservation-form .form-select, .reservation-form textarea{ background: #fff; }
+
+@media (max-width: 767px){
+    .reservation-card{ padding: 0; }
+    .reservation-form .col-md-6, .reservation-form .col-md-4, .reservation-form .col-md-8{ flex: 0 0 100%; max-width: 100%; }
 }

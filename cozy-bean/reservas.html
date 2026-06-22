@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cozy Bean | Reservas</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">THE COZY BEAN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="produtos.html" class="nav-link">Cardápio</a></li>
+                    <li class="nav-item"><a href="#delivery" class="nav-link">Delivery</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li class="nav-item"><a href="reservas.html" class="nav-link active">Reservas</a></li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-caramel">Cadastro</button>
+                    <button class="btn btn-outline-light">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-section" style="height:36vh;">
+        <div class="overlay"></div>
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>Reservas</h1>
+                    <p>Reserve sua mesa com antecedência e garanta o melhor lugar.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- RESERVATION FORM -->
+    <main class="section-padding">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Faça sua Reserva</h2>
+                    <p class="text-muted">Preencha os dados abaixo. Enviaremos uma confirmação por e-mail ou telefone.</p>
+
+                    <div class="card shadow-sm reservation-card">
+                        <div class="card-body">
+                            <form id="reservation-form" class="reservation-form">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Nome completo</label>
+                                        <input type="text" class="form-control" id="res-name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Telefone</label>
+                                        <input type="tel" class="form-control" id="res-phone" placeholder="(xx) xxxxx-xxxx" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Data</label>
+                                        <input type="date" class="form-control" id="res-date" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Hora</label>
+                                        <input type="time" class="form-control" id="res-time" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">Pessoas</label>
+                                        <select class="form-select" id="res-guests">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6+</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label class="form-label">E-mail (opcional)</label>
+                                        <input type="email" class="form-control" id="res-email" placeholder="seu@exemplo.com">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Observações</label>
+                                        <textarea class="form-control" id="res-notes" rows="3" placeholder="Ex.: cadeira para bebê, ocasião especial..."></textarea>
+                                    </div>
+                                    <div class="col-12 d-flex gap-2">
+                                        <button type="submit" class="btn btn-caramel">Solicitar Reserva</button>
+                                        <button type="reset" class="btn btn-outline-secondary">Limpar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <section class="mt-4">
+                        <h5>Política de Reservas</h5>
+                        <p class="small text-muted">Reservas são mantidas por 15 minutos após o horário agendado. Em caso de grupo grande contacte-nos com antecedência.</p>
+                    </section>
+
+                </div>
+
+                <aside class="col-lg-4">
+                    <div class="card shadow-sm mb-3">
+                        <div class="card-body">
+                            <h6>Endereço</h6>
+                            <p class="small mb-1">Rua Exemplo, 123 - Bairro Charmoso</p>
+                            <p class="small mb-0">Cidade - Estado</p>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm mb-3">
+                        <div class="card-body">
+                            <h6>Telefone</h6>
+                            <p class="small mb-0">(21) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h6>Horário</h6>
+                            <p class="small mb-0">Seg-Sex: 08:00 - 20:00<br>Sab: 09:00 - 18:00</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <h3 class="footer-brand">THE COZY BEAN</h3>
+                    <p class="footer-text">Experiências inesquecíveis.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h5 class="footer-title">Contato</h5>
+                    <p class="footer-text mb-2">(21) 99999-9999</p>
+                    <p class="footer-text">contato@thecozybean.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h5 class="footer-title">Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Loja</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12">
+                    <h5 class="footer-title">Redes Sociais</h5>
+                    <div class="social">
+                        <a href="https://www.instagram.com/" id="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/?locale=pt_BR" id="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://wa.me/5521980318720" id="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.tiktok.com/pt-BR/" id="tiktok"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://x.com/?lang=pt" id="x"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Cozy Bean. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        // Validação e envio de reserva (simples)
+        document.getElementById('reservation-form')?.addEventListener('submit', function(e){
+            e.preventDefault();
+            const name = document.getElementById('res-name').value.trim();
+            const date = document.getElementById('res-date').value;
+            const time = document.getElementById('res-time').value;
+            const guests = document.getElementById('res-guests').value;
+            if(!name || !date || !time){
+                alert('Por favor preencha nome, data e hora.');
+                return;
+            }
+            alert(`Reserva solicitada para ${name} em ${date} às ${time} para ${guests} pessoa(s). Entraremos em contato.`);
+            e.target.reset();
+        });
+    </script>
+
+</body>
+
+</html>

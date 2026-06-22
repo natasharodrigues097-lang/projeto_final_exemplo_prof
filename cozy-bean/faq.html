@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Cozy Bean | FAQ</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">THE COZY BEAN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#delivery" class="nav-link">Delivery</a></li>
+                    <li class="nav-item"><a href="produtos.html" class="nav-link">Cardápio</a></li>
+                    <li class="nav-item"><a href="#reservas" class="nav-link">Reservas</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+
+                <div class="d-flex gap-2">
+                    <button class="btn btn-caramel">Cadastro</button>
+                    <button class="btn btn-outline-light">Login</button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-section" style="height:36vh;">
+        <div class="overlay"></div>
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>FAQ</h1>
+                    <p>Encontre respostas rápidas sobre nossos serviços, entregas e políticas.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- FAQ CONTENT -->
+    <main class="section-padding">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-8">
+                    <h2 class="section-title">Perguntas Frequentes</h2>
+
+                    <div class="mb-4">
+                        <input id="faq-search" class="form-control" placeholder="Pesquisar perguntas...">
+                    </div>
+
+                    <div class="accordion" id="faqAccordion">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+                                    Como faço uma reserva?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Você pode reservar pelo botão "Reservar" no site, por telefone ou pelo nosso Whatsapp.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">
+                                    Vocês fazem entregas em toda a cidade?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim. Oferecemos delivery dentro da cidade — o valor do frete varia conforme a distância.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false">
+                                    Quais são as formas de pagamento?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Aceitamos cartão, Pix e pagamento em dinheiro no balcão.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false">
+                                    Há opções vegetarianas e veganas?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim — temos itens no cardápio sinalizados como vegetarianos e veganos.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false">
+                                    Posso comprar produtos e retirar na loja?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim — ao finalizar a compra, escolha a opção "Retirar na loja" e venha no horário combinado.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <aside class="col-lg-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Precisa de ajuda?</h5>
+                            <p class="card-text">Fale conosco pelo Whatsapp ou telefone e responderemos em instantes.</p>
+                            <a href="https://wa.me/5521980318720" class="btn btn-caramel w-100"><i class="bi bi-whatsapp me-2"></i>Whatsapp</a>
+                        </div>
+                    </div>
+
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h6 class="mb-2">Horário de funcionamento</h6>
+                            <p class="small mb-0">Seg-Sex: 08:00 - 20:00<br>Sab: 09:00 - 18:00<br>Dom: Fechado</p>
+                        </div>
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <h3 class="footer-brand">THE COZY BEAN</h3>
+                    <p class="footer-text">Experiências inesquecíveis.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h5 class="footer-title">Contato</h5>
+                    <p class="footer-text mb-2">(21) 99999-9999</p>
+                    <p class="footer-text">contato@thecozybean.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h5 class="footer-title">Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Loja</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12">
+                    <h5 class="footer-title">Redes Sociais</h5>
+                    <div class="social">
+                        <a href="https://www.instagram.com/" id="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/?locale=pt_BR" id="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://wa.me/5521980318720" id="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.tiktok.com/pt-BR/" id="tiktok"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://x.com/?lang=pt" id="x"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Cozy Bean. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        // Busca simples nas perguntas
+        document.getElementById('faq-search')?.addEventListener('input', function(e){
+            const q = e.target.value.toLowerCase();
+            document.querySelectorAll('#faqAccordion .accordion-item').forEach(item=>{
+                const header = item.querySelector('.accordion-button').innerText.toLowerCase();
+                const body = item.querySelector('.accordion-body').innerText.toLowerCase();
+                if(q === '' || header.includes(q) || body.includes(q)) item.style.display = '';
+                else item.style.display = 'none';
+            });
+        });
+    </script>
+
+</body>
+
+</html>
